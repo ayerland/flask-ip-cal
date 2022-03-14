@@ -1,0 +1,10 @@
+certifi
+click
+Flask
+netaddr
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+wincertstore

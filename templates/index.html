@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Subnet Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <form action="/" method="post">
+        <input type="text" placeholder="Enter Subnet CIDR Notation" name="cidr_entry" required>
+        <br><br>
+        <input type="submit" value="SUBMIT" id="process" style="text-align: center;">
+    </form>
+    <pre>
+    {% for message in get_flashed_messages() %}
+	 {{ message }}
+    {% endfor %}
+    </pre>
+</body>
+</html>
